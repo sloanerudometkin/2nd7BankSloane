@@ -1,7 +1,13 @@
+class Transaction:
+    def __init__(self, date: str, trans_type: str, amount: float):
+        self.date = date
+        self.type = trans_type.strip().lower()
+        self.amount = amount
+    
 class BankAccount:
     def __init__(self, initial_balance: float = 0.0):
         self.balance = initial_balance
-    
+
     def apply_transaction(self, transaction: Transaction):
         #applies a transaction to the account
         if transaction.type == "deposit":
@@ -36,7 +42,7 @@ class BankAccount:
         print(f"Final Balance: ${account.get_balance():.2f}")
 
     if __name__ == "__main__":
-        process_bank_file('input data")')
+        process_bank_file("input data")
 
     
 
