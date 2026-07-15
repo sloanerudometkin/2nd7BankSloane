@@ -38,4 +38,4 @@ payroll = calculate_payroll(input_data)
 
 print_payroll(payroll)
 
-# write_output('output.data', payroll)
+write_output('output.data', payroll)
